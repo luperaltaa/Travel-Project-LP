@@ -44,7 +44,10 @@ body {
   text-transform: uppercase;
   background-color: aliceblue;
 }
-@media (max-width: 900px) {
+footer {
+  background-image: url("/images/bigben.jpg");
+}
+@media (max-width: 960px) {
   .hero {
     padding: 60px 0;
   }
