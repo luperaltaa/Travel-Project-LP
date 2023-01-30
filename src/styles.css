@@ -7,12 +7,21 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive {
+  max-width: 500px;
 }
 section {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -57,13 +66,44 @@ header a {
   text-transform: uppercase;
   background-color: aliceblue;
 }
+main {
+  background-color: #183446;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main h2 {
+  color: aliceblue;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.6;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+main h3 {
+  color: aliceblue;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+}
+main p {
+  color: aliceblue;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.6;
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/londoneye.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
+
   color: aliceblue;
 }
 footer h3 {
@@ -100,5 +140,15 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .img-responsive {
+    max-width: 250px;
+  }
+  section {
+    padding: 30px;
   }
 }
