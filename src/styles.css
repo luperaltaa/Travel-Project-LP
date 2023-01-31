@@ -9,6 +9,9 @@ body {
   display: grid;
   grid-gap: 64px;
 }
+.text-center {
+  text-align: center;
+}
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
@@ -22,6 +25,8 @@ section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 100px 0;
+}
+section.secondary {
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
