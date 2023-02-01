@@ -66,10 +66,14 @@ body {
 }
 
 .img-responsive {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+.img-responsive-gallery {
   display: block;
   width: 100%;
+  filter: grayscale(50%);
 }
-
 .btn {
   display: block;
   color: aliceblue;
